@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Handlers Example</title>
+    <script>
+        function pageLoaded() {
+            alert("ไม่มีวันไหนที่ฉันไม่คิดถึงไอ่หนุ่มนั่น");
+        }
+
+        function buttonClicked() {
+            alert("Button was clicked!");
+        }
+
+        function inputChanged() {
+            alert("ไม่!!!!!!!!!!!!!!!!");
+        }
+    </script>
+</head>
+
+<body onload="pageLoaded()">
+
+    <h1>Welcome to My Website</h1>
+
+    <!-- Event handler: onchange -->
+    <input type="text" id="myInput" onchange="inputChanged()" />
+
+    <!-- Event handler: onclick -->
+    <button onclick="buttonClicked()">ส่ง</button>
+
+</body>
+
+</html>
